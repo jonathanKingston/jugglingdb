@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 
-require('./adapters/memory'); //For browserify
+require(__dirname+'/adapters/memory'); //For browserify
 
 exports.Schema = require('./lib/schema').Schema;
 exports.AbstractClass = require('./lib/abstract-class').AbstractClass;
